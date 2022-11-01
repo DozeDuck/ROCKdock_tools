@@ -1,0 +1,55 @@
+1.处理配体库
+	将配体库载入MOE2019，使用能量最小化，力场为AMBER14EHT，最后存为mol2格式
+2.处理受体
+	将Apo-protein用Chimera打开后，进行Dock Prep处理(加H，Add charges:[standard residues_AMBER ff14SB] [other residues_AM1-BCC])，并最终存为recpter.mol2(UCSF Dock6用) 和 recptor.pdb(Hyde用)
+3.准备UCSF Dock6 所需文件
+	-用Chimera 打开Apo-protein，删掉所有H原子，生成Surface，再write DMS，存为recepter_noH.dms(UCSF Dock6用)
+	-如果没有crystal-complex,则用SeeSAR先根据文献将已知有效分子与目标蛋白的LBD进行对接(注意，蛋白质的坐标应该与上一步的坐标完全一致)，将对接后的小分子单独存为sdf格式(UCSF Dock6用)
+	-将上一步的sdf小分子用Chimera打开，Dock Prep一下，先存为center.mol2(用于Hyde评分)，再生成surface，再write DMS，存为ligand.dms(UCSF Dock6用)
+4.开始UCSF Dock6 
+	-sphgen < INSPH
+	ligand.dms  ;first line 2nnq_rec_noH.dms specifies the input file
+	L						;R indicates that spheres generated will be outside of the receptor surface, L indicates that spheres generated will be inside of the ligand surface
+	X						;X specifies all the points will be used
+	0.0					;0.0 is the distance in angstroms and it will avoid steric clashes
+	4.0					;4.0 is the maximum surface radius of the spheres
+	1.4					;1.4 is the minimum radius in angstroms
+	ligand.sph		  ;The last line 2nnq_spheres.sph creates the sph file that contains clustered spheres
+	-sphere_selector ligand.sph rec.mol2 10.0
+	生成selected_spheres.sph
+	-showbox < showbox.in
+	生成box.pdb
+	-grid -i grid.in -o gridinfo.out
+	生成gridinfo.out  gridREC.bmp  gridREC.nrg，
+	改名为grid.out    grid.bmp     grid.nrg
+5.准备Rock Dock 文件
+	-在其他文件夹中把bin/ parameters/ tools/ input_location/(需要清空文件夹) rockdock_prep.sh rockdock_submitter.sh rockdock_rescorer.sh hyde_to_dock6.sh 复制过来
+	-在input_location文件夹中放入center.mol2(Hyde用)  grid.bmp  grid.nrg  receptor.pdb(Hyde用)  selected_spheres.sph
+	-执行./rockdock_prep.sh 生成dock_output/set_*
+6.开始Rock Dock
+	-执行./rockdock_submitter.sh
+	../../bin/dock6 -i flex.in
+7.开始HYDE Rescore
+	-执行./rockdock_rescorer.sh
+	../../bin/hydescorer -i flex.out_scored.mol2 -p ../../input_location/receptor.pdb -r ../../input_location/center.mol2 -o scored_seesar_0.sdf --thread-count 1
+8.分析
+	$cat dock_output/set_*/flex*mol2 > dock6_fullposes.mol2					 # 整理UCSF Dock6结果
+	$dock6filter -i dock6_fullposes.mol2 -o dock6_top_subset.mol2 -r (gscore or cluster) -n (number of molecules in the subset – usually 1000)
+
+	$cat dock_output/set_*/flex*sdf  > seesar_rescore_fullposes.sdf  # 整理Hyde score结果
+	
+	$mkdir seesar_ranker
+	$cd seesar_ranker
+	$cp ../tools/seesar_score_ranker.sh . ; cp ../seesar_rescore_fullposes.sdf	.
+	$./seesar_score_ranker.sh seesar_rescore_fullposes.sdf 50 # 排序，50代表前取前50 生成文件名为：seesar_rescore_subset_top_50.sdf
+	$cd .. 
+	$cp seesar_ranker/seesar_rescore_subset_top_50.sdf .       # 将排序完成后生成的结果复制到主界面
+	$rm -r seesar_ranker																				# 直接删除排序那一步的文件夹
+	$mkdir hyde_to_dock6
+	$cd hyde_to_dock6
+	$cp ../seesar_rescore_subset_top_50.sdf .
+	$cp ../tools/hyde_to_dock6.sh .
+	$./hyde_to_dock6.sh seesar_rescore_subset_top_50.sdf 			# 格式转换
+
+
+

@@ -1,0 +1,25 @@
+nlopt library
+=============
+
+To replace the nlopt library copy your version in the following directories:
+
+Windows:
+- <INSTALL_DIR>
+
+Linux:
+- <INSTALL_DIR>/lib
+
+macOS:
+- <APP_DIR>/Contents/Frameworks
+
+nlopt source code
+=================
+The nlopt source code can be obtained from:
+https://nlopt.readthedocs.io/en/latest/#download-and-installation
+
+or from our server:
+http://www.biosolveit.de/ext_src/nlopt-src.zip
+
+In the unexpected case of unavailability of the server please send an email at
+ext_src@biosolveit.de. We will ensure access to the requested sources as soon as
+possible.

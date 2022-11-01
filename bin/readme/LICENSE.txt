@@ -1,0 +1,338 @@
+Table of contents
+==========================================================================================
+
+1. Copyright information & legal notice
+2. 3rd party libraries
+  2.1  boost
+  2.2  bzip2
+  2.3  Cairo
+  2.4  Eigen
+  2.5  FreeType
+  2.6  libzip
+  2.7  nanoflann
+  2.8  NLopt
+  2.9  pixman
+  2.10 QT GUI Toolkit
+  2.11 Quazip
+  2.12 zlib
+3. Fonts
+  3.1 OpenSans font
+
+
+
+1. Copyright information & legal notice
+==========================================================================================
+
+This application is a proprietary work owned by BioSolveIT GmbH, Germany and protected by
+copyright.
+
+Subject to the terms and conditions under which incorporated third party libraries and
+fonts are provided and as far as no other BioSoveIT license agreement is applicable:
+
+The usage is restricted to the purpose of evaluation. The program is provided on an *as
+is* basis, without warranty of any kind, express or implied, including but not limited to
+the warranties of merchantability, fitness for a particular purpose, title and
+non-infringement. BioSolveIT GmbH is not liable for any damages resulting from any kind of
+use unless BioSolveIT acted with gross negligence or bad faith. The German Product
+Liability Act remains unaffected. BioSolveIT GmbH is not liable for this application being
+free of rights of third parties.
+
+The used third party libraries, icons and/or fonts, their related copyright notes and
+license terms are listed below.
+
+
+2. 3rd party libraries, icons and fonts
+==========================================================================================
+
+2.1 boost
+------------------------------------------------------------------------------------------
+Copyright (C) Joe Coder 2004 - 2006
+Distributed under the Boos Software License, Version 1.0
+
+See at license_Boost.txt or at https://www.boost.org/LICENSE_1_0.txt for the license and
+applicable disclaimers.
+
+
+
+2.2 bzip2
+------------------------------------------------------------------------------------------
+This program, "bzip2", the associated library "libbzip2", and all documentation, are
+copyright (C) 1996-2010 Julian R Seward. All rights reserved.
+Julian Seward, jseward@bzip.org bzip2/libbzip2 version 1.0.6 of 6 September 2010
+
+
+
+2.3 Cairo
+------------------------------------------------------------------------------------------
+Cairo - a vector graphics library with display and print output
+
+Copyright (C) 2006 Red Hat, Inc.
+https://www.cairographics.org/
+
+The source code of the library is made available under the Mozilla Public License (MPL)
+version 1.1 at http://www.biosolveit.de/ext_src/cairo-src-1.10.2.zip
+
+Here you will also find the text of the MPL 1.1 including its Annex A. In the unexpected
+case of unavailability of the server please send an email at ext_src@biosolveit.de. We
+will ensure access to the requested sources as soon as possible.
+
+The object code of Cairo, as part of this executable, is licensed under BioSolveITs own
+terms and conditions for BioSolveITs proprietary software. We hereby inform you that any
+terms that differ from the MPL are offered by BioSolveIT alone, not by the initial
+developer or any contributor.
+
+
+
+2.4 Eigen
+------------------------------------------------------------------------------------------
+Copyright (C) 2011, Intel Corporation. All rights reserved.
+
+The source code of the library is made available under the Mozilla Public License (MPL)
+version 2.0 at http://www.biosolveit.de/ext_src/eigen-src.zip
+
+Here you will also find the text of the MPL 2.
+
+In the unexpected case of unavailability of the server please send an email at
+ext_src@biosolveit.de. We will ensure access to the requested sources as soon as possible.
+
+The object code of Eigen, as part of this executable, is licensed under BioSolveITs own
+terms and conditions for BioSolveITs proprietary software. We hereby inform you that any
+terms that differ from the MPL are offered by BioSolveIT alone, not by the initial
+developer or any contributor.
+
+
+
+2.5 FreeType
+------------------------------------------------------------------------------------------
+Portions of this software are copyright (C)<2013> The FreeType Project (www.freetype.org).
+All rights reserved.
+
+Copyright 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner Lemberg
+
+
+
+2.6 libzip
+------------------------------------------------------------------------------------------
+libzip is released under a 3-clause BSD license:
+
+Copyright (C) 1999-2019 Dieter Baron and Thomas Klausner
+
+The authors can be contacted at libzip@nih.at
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of
+   conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of
+   conditions and the following disclaimer in the documentation and/or other materials
+   provided with the distribution.
+3. The names of the authors may not be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+2.7 nanoflann
+------------------------------------------------------------------------------------------
+Software License Agreement (BSD License)
+
+Copyright 2008-2009  Marius Muja (mariusm@cs.ubc.ca). All rights reserved.
+Copyright 2008-2009  David G. Lowe (lowe@cs.ubc.ca). All rights reserved.
+Copyright 2011 Jose L. Blanco (joseluisblancoc@gmail.com). All rights reserved.
+
+THE BSD LICENSE
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of
+   conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of
+   conditions and the following disclaimer in the documentation and/or other materials
+   provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+2.8 NLopt
+------------------------------------------------------------------------------------------
+The NLopt library is under the GNU Lesser General Public License (LGPL), and the
+copyrights are owned by a variety of authors.
+
+In general, the different code in NLopt comes from different sources, and have a variety
+of licenses. For example, all of the new code we wrote for NLopt is under the MIT License
+(which imposes essentially no practical restrictions, and is hence compatible with the
+LGPL). The combination of all of this software is under the conjunction of the license
+terms, and in particular they are limited by the most restrictive of the licenses for the
+portions, which in this case is the LGPL. (The other portions of NLopt are under
+LGPL-compatible, less-restrictive licenses like the MIT license. So, if you remove the
+LGPL portions, which are currently code by Ladislav Luksan, the remainder reverts to a
+looser license.)
+
+New code written by me for NLopt is Copyright (C) 2007-2010 Massachusetts Institute of
+Technology, and comes with no warranty:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+Please cite NLopt and the authors of the respective algorithms in any publication for
+which you find it useful. (This is not a legal requirement, just a polite request.)
+
+You can find a copy of the LGPL at  http://www.gnu.org/licenses/ and in
+license_LGPLV3_GPLV3 file. NLopt is linked with a shared library mechanism. Installation
+information is provided in the Installation_SRC_NLopt.txt file.
+
+
+
+2.9 pixman
+------------------------------------------------------------------------------------------
+The following is the MIT license, agreed upon by most contributors. Copyright holders of
+new code should use this license statement where possible. They may also add themselves to
+the list below.
+
+Copyright 1987, 1988, 1989, 1998  The Open Group
+Copyright 1987, 1988, 1989 Digital Equipment Corporation
+Copyright 1999, 2004, 2008 Keith Packard
+Copyright 2000 SuSE, Inc.
+Copyright 2000 Keith Packard, member of The XFree86 Project, Inc.
+Copyright 2004, 2005, 2007, 2008, 2009, 2010 Red Hat, Inc.
+Copyright 2004 Nicholas Miell
+Copyright 2005 Lars Knoll & Zack Rusin, Trolltech
+Copyright 2005 Trolltech AS
+Copyright 2007 Luca Barbato
+Copyright 2008 Aaron Plattner, NVIDIA Corporation
+Copyright 2008 Rodrigo Kumpera
+Copyright 2008 Andre Tupinambe
+Copyright 2008 Mozilla Corporation
+Copyright 2008 Frederic Plourde
+Copyright 2009, Oracle and/or its affiliates. All rights reserved.
+Copyright 2009, 2010 Nokia Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice (including the next paragraph) shall
+be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+
+2.10 QT GUI Toolkit
+------------------------------------------------------------------------------------------
+The Qt GUI Toolkit is Copyright (C) 2021 The Qt Company Ltd.
+Contact: http://www.qt.io/licensing/
+
+You may use, distribute and copy the Qt GUI Toolkit under the terms of GNU Lesser General
+Public License version 3. This license makes reference to the version 3 of the GNU General
+Public License. Other portions of the Qt Toolkit may be licensed directly under GNU
+General Public License.
+
+You can find both of it in license_LGPLV3_GPLV3 file.
+
+Third party libraries used in Qt, the related copyright notes and licenses are listed in
+the file Qt_3rdPartyLibs.
+
+The file Qt_OtherLicenses lists portions of the Qt code that are not licensed under GNU
+Lesser General Public License (LGPL), including the respective copyright notes and
+licenses.
+
+The used Qt libraries are linked with a shared library mechanism. Installation information
+in the sense of section 4 LGPL version 3 is provided in the Installation_SRC_Qt.txt file.
+
+
+
+2.11 Quazip
+------------------------------------------------------------------------------------------
+QuaZip is the C++ wrapper for Gilles Vollant's ZIP/UNZIP package (AKA Minizip) using Qt
+library.
+
+Copyright (C) 2005-2020 Sergey A. Tachenov and contributors
+
+The original ZIP/UNZIP package (MiniZip) is copyrighted by Gilles Vollant and
+contributors, see quazip/(un)zip.h files for details. Basically it's the zlib license.
+
+STATIC LINKING EXCEPTION
+
+The QuaZip library is licensed under the GNU Lesser General Public License V2.1 plus a
+static linking exception.
+
+The copyright holders give you permission to link this library with independent modules to
+produce an executable, regardless of the license terms of these independent modules, and
+to copy and distribute the resulting executable under terms of your choice, provided that
+you also meet, for each linked independent module, the terms and conditions of the license
+of that module. An independent module is a module which is not derived from or based on
+this library. If you modify this library, you must extend this exception to your version
+of the library.
+
+See license_LGPLV2_1.txt for the full text of the GNU Lesser General Public License V2.1.
+Quazip is linked with a shared library mechanism. Installation information is provided in
+the Installation_SRC_Quazip.txt file.
+
+
+
+2.12 zlib
+------------------------------------------------------------------------------------------
+zlib.h -- interface of the 'zlib' general purpose compression library version 1.2.11,
+January 15th, 2017
+
+Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
+
+Jean-loup Gailly        Mark Adler
+jloup@gzip.org          madler@alumni.caltech.edu
+
+
+
+3. Fonts
+==========================================================================================
+
+3.1 OpenSans font
+------------------------------------------------------------------------------------------
+http://www.fontsquirrel.com/fonts/open-sans
+
+Adaptions to glyphs:
+- adapted "l"
+
+Copyright (C) 2021 BioSolveIT GmbH
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+except in compliance with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+You can also find a copy of the license in license_Apache2.txt file.
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the
+License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the License for the specific language governing permissions
+and limitations under the License.

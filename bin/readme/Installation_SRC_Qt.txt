@@ -1,0 +1,32 @@
+Qt library
+==========
+
+Replacing the Qt library without modification is possible, but may cause problems with the
+png library, because it is statically linked into the application (using libpng v1.6.37).
+To replace the Qt library copy your version in the following directories:
+
+Windows:
+- <INSTALL_DIR>
+- <INSTALL_DIR>/plugins
+- <INSTALL_DIR>/qml
+
+Linux:
+- <INSTALL_DIR>/lib
+- <INSTALL_DIR>/plugins
+- <INSTALL_DIR>/qml
+
+macOS:
+- <APP_DIR>/Contents/Frameworks
+- <APP_DIR>/Contents/PlugIns
+- <APP_DIR>/Contents/qml
+
+Qt source code
+==============
+The Qt source code can be obtained from:
+http://download.qt.io/archive/qt/
+
+or from our server:
+http://www.biosolveit.de/ext_src/qt-everywhere-src-5.15.2.zip
+
+In the unexpected case of unavailability of the server please send an email at
+ext_src@biosolveit.de. We will ensure access to the requested sources as soon as possible.
