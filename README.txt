@@ -1,3 +1,4 @@
+Author: Dr Joao Victor De Souza and Shangze Xu
 RockDock – How to use it
 
 Rockdock is a pipeline wrapper that controls submissions of ultra-large libraries for SLURM job managers (i.e. Rocket HPC) that submits, 
